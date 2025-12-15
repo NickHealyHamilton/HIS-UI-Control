@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS_API_NETFramework", "HIS_API_NETFramework\HIS_API_NETFramework.csproj", "{DCA4D776-C845-4521-90A8-B92BB86E1D1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS_Backend", "HIS_Backend\HIS_Backend.csproj", "{CD9057D2-74A7-4085-AB15-F321E047AFE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{15106DED-89CA-41F9-9A51-2A62AC98B8B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCA4D776-C845-4521-90A8-B92BB86E1D1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCA4D776-C845-4521-90A8-B92BB86E1D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCA4D776-C845-4521-90A8-B92BB86E1D1E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DCA4D776-C845-4521-90A8-B92BB86E1D1E}.Debug|x86.Build.0 = Debug|Any CPU
+		{DCA4D776-C845-4521-90A8-B92BB86E1D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCA4D776-C845-4521-90A8-B92BB86E1D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCA4D776-C845-4521-90A8-B92BB86E1D1E}.Release|x86.ActiveCfg = Release|x86
+		{DCA4D776-C845-4521-90A8-B92BB86E1D1E}.Release|x86.Build.0 = Release|x86
+		{CD9057D2-74A7-4085-AB15-F321E047AFE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD9057D2-74A7-4085-AB15-F321E047AFE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD9057D2-74A7-4085-AB15-F321E047AFE7}.Debug|x86.ActiveCfg = Debug|x86
+		{CD9057D2-74A7-4085-AB15-F321E047AFE7}.Debug|x86.Build.0 = Debug|x86
+		{CD9057D2-74A7-4085-AB15-F321E047AFE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD9057D2-74A7-4085-AB15-F321E047AFE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD9057D2-74A7-4085-AB15-F321E047AFE7}.Release|x86.ActiveCfg = Release|x86
+		{CD9057D2-74A7-4085-AB15-F321E047AFE7}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F373DB06-6471-4D00-B6C3-171B69AE3AAD}
+	EndGlobalSection
+EndGlobal
