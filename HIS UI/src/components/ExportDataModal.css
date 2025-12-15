@@ -1,0 +1,195 @@
+.export-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+.export-modal-content {
+    background: #1a1a1a;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.export-modal-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.export-modal-header h2 {
+    color: var(--hamilton-white);
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.export-modal-body {
+    padding: 1.5rem;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.export-modal-footer {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #3a3a3a;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+/* Export Mode Selector */
+.export-mode-selector {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #0f0f0f;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+}
+
+.mode-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: var(--hamilton-white);
+    font-size: 1rem;
+}
+
+.mode-option input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.mode-option span {
+    user-select: none;
+}
+
+/* Date Range Section */
+.date-range-section {
+    margin-bottom: 2rem;
+}
+
+.date-range-section h3 {
+    color: var(--hamilton-white);
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+}
+
+.date-inputs {
+    display: flex;
+    gap: 1rem;
+}
+
+.date-inputs .input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.date-inputs label {
+    color: #9ca3af;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.date-inputs input[type="date"] {
+    background: #0f0f0f;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    padding: 0.6rem;
+    color: var(--hamilton-white);
+    font-size: 0.95rem;
+}
+
+.date-inputs input[type="date"]:focus {
+    outline: none;
+    border-color: var(--hamilton-trusted-blue);
+}
+
+/* Selection Section */
+.selection-section {
+    margin-bottom: 1.5rem;
+}
+
+.selection-section h3 {
+    color: var(--hamilton-white);
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+}
+
+.barcode-select,
+.shelf-select {
+    width: 100%;
+    background: #0f0f0f;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    padding: 0.6rem;
+    color: var(--hamilton-white);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.barcode-select {
+    font-family: 'Courier New', monospace;
+}
+
+.barcode-select:focus,
+.shelf-select:focus {
+    outline: none;
+    border-color: var(--hamilton-trusted-blue);
+}
+
+.info-text {
+    color: #9ca3af;
+    font-size: 0.85rem;
+    margin: 0.5rem 0 0 0;
+    font-style: italic;
+}
+
+.loading-text,
+.empty-text {
+    color: #666;
+    font-style: italic;
+    padding: 1rem;
+    text-align: center;
+    background: #0f0f0f;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+}
+
+/* Scrollbar styling */
+.export-modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.export-modal-body::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+.export-modal-body::-webkit-scrollbar-thumb {
+    background: #3a3a3a;
+    border-radius: 4px;
+}
+
+.export-modal-body::-webkit-scrollbar-thumb:hover {
+    background: #4a4a4a;
+}

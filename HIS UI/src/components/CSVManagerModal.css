@@ -1,0 +1,152 @@
+.csv-modal-content {
+    background: #2a2a2a;
+    border-radius: 8px;
+    width: 90vw;
+    max-width: 1200px;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.csv-modal-body {
+    padding: 1.5rem;
+    color: #e0e0e0;
+}
+
+.csv-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.csv-files-list {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+
+.csv-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1a1a1a;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.csv-table thead {
+    background: #333;
+}
+
+.csv-table th,
+.csv-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.csv-table th {
+    font-weight: 600;
+    color: #9ca3af;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.csv-table td {
+    color: #e0e0e0;
+}
+
+.csv-table tbody tr:hover {
+    background: #2a2a2a;
+}
+
+.csv-table .filename {
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 0.875rem;
+    color: #00a0f0;
+}
+
+.mode-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mode-badge.live {
+    background: #00a0f0;
+    color: #fff;
+}
+
+.mode-badge.simulated {
+    background: #ffc107;
+    color: #000;
+}
+
+.btn-small {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+.csv-info {
+    background: #1a1a1a;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.csv-info h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #00a0f0;
+    font-size: 1.1rem;
+}
+
+.csv-info ul {
+    margin: 0;
+    padding-left: 1.5rem;
+    color: #9ca3af;
+    line-height: 1.8;
+}
+
+.csv-info li {
+    margin-bottom: 0.5rem;
+}
+
+.csv-info strong {
+    color: #e0e0e0;
+}
+
+.no-data-message {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: #9ca3af;
+}
+
+.no-data-message p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .csv-modal-content {
+        width: 95vw;
+        max-height: 90vh;
+    }
+
+    .csv-actions {
+        flex-direction: column;
+    }
+
+    .csv-table {
+        font-size: 0.875rem;
+    }
+
+    .csv-table th,
+    .csv-table td {
+        padding: 0.5rem;
+    }
+}

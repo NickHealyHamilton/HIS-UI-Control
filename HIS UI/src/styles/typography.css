@@ -1,0 +1,129 @@
+/* Base Typography */
+body {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-content);
+  letter-spacing: var(--letter-spacing-content);
+  text-align: left;
+  color: var(--hamilton-black);
+}
+
+/* Headlines */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-heading);
+  color: var(--hamilton-deep-blue);
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+}
+
+h5 {
+  font-size: var(--font-size-h5);
+}
+
+h6 {
+  font-size: var(--font-size-h6);
+}
+
+/* Lead Text */
+.lead {
+  font-size: calc(var(--font-size-base) * 1.2);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-content);
+  margin-bottom: 1.5em;
+}
+
+/* Accent Text (for digital) */
+.accent {
+  color: var(--hamilton-enabling-green);
+  font-size: max(15pt, var(--font-size-base));
+  font-weight: var(--font-weight-medium);
+}
+
+/* Dark background text */
+.bg-dark {
+  background-color: var(--hamilton-deep-blue);
+  color: var(--hamilton-white);
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark h4,
+.bg-dark h5,
+.bg-dark h6 {
+  color: var(--hamilton-white);
+}
+
+/* Captions */
+.caption {
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-content);
+  letter-spacing: var(--letter-spacing-content);
+}
+
+.caption-title {
+  font-weight: var(--font-weight-medium);
+}
+
+.caption-copy {
+  font-weight: var(--font-weight-light);
+}
+
+/* Intertitles */
+.intertitle {
+  font-weight: var(--font-weight-medium);
+  color: var(--hamilton-deep-blue);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Links */
+a {
+  color: var(--hamilton-trusted-blue);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--hamilton-deep-blue);
+}
+
+/* Paragraph spacing */
+p {
+  margin-bottom: 1em;
+  max-width: 70ch; /* Optimal line length for readability */
+}
+
+/* List styling */
+ul, ol {
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+/* Emphasis */
+strong {
+  font-weight: var(--font-weight-medium);
+}
+
+em {
+  font-style: italic;
+}

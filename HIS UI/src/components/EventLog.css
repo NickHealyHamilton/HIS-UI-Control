@@ -1,0 +1,125 @@
+.event-log {
+    background: #1a1a1a;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.event-log-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.event-log-header h3 {
+    margin: 0;
+    color: var(--hamilton-white);
+    font-size: 1rem;
+}
+
+.event-log-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.event-count {
+    color: #9ca3af;
+    font-size: 0.85rem;
+}
+
+.btn-clear {
+    background: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    color: var(--hamilton-white);
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.btn-clear:hover {
+    background: #3a3a3a;
+}
+
+.event-log-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0.5rem;
+}
+
+.event-empty {
+    text-align: center;
+    color: #666;
+    padding: 2rem;
+    font-style: italic;
+}
+
+.event-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.25rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    border-left: 3px solid transparent;
+}
+
+.event-item.event-info {
+    background: rgba(0, 160, 240, 0.1);
+    border-left-color: #00a0f0;
+}
+
+.event-item.event-warning {
+    background: rgba(255, 193, 7, 0.1);
+    border-left-color: #ffc107;
+}
+
+.event-item.event-error {
+    background: rgba(220, 53, 69, 0.1);
+    border-left-color: #dc3545;
+}
+
+.event-item.event-success {
+    background: rgba(40, 167, 69, 0.1);
+    border-left-color: #28a745;
+}
+
+.event-icon {
+    font-size: 1.2rem;
+}
+
+.event-time {
+    color: #9ca3af;
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    min-width: 80px;
+}
+
+.event-message {
+    color: var(--hamilton-white);
+    flex: 1;
+}
+
+/* Scrollbar styling */
+.event-log-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.event-log-body::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+.event-log-body::-webkit-scrollbar-thumb {
+    background: #3a3a3a;
+    border-radius: 3px;
+}
+
+.event-log-body::-webkit-scrollbar-thumb:hover {
+    background: #4a4a4a;
+}

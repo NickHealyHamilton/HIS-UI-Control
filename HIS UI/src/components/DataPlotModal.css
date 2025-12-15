@@ -1,0 +1,120 @@
+.plot-modal-content {
+    background-color: var(--hamilton-white);
+    border-radius: 8px;
+    width: 95vw;
+    max-width: 1400px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.plot-modal-body {
+    flex: 1;
+    padding: 1.5rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.plot-controls {
+    background: #1a1a1a;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 200px;
+}
+
+.control-group label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #9ca3af;
+}
+
+.file-select,
+.timespan-select {
+    padding: 0.5rem;
+    background: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    color: #e0e0e0;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.file-select option,
+.timespan-select option {
+    background: #2a2a2a;
+    color: #e0e0e0;
+    padding: 0.5rem;
+}
+
+.file-select:hover,
+.timespan-select:hover {
+    border-color: #00a0f0;
+}
+
+.file-select:focus,
+.timespan-select:focus {
+    outline: none;
+    border-color: #00a0f0;
+    box-shadow: 0 0 0 2px rgba(0, 160, 240, 0.1);
+}
+
+.control-info {
+    flex: 1;
+    text-align: right;
+    color: #9ca3af;
+    font-size: 0.875rem;
+    min-width: 200px;
+    padding-bottom: 0.5rem;
+}
+
+.chart-container {
+    background-color: #1a1a1a;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.chart-container h3 {
+    color: var(--hamilton-white);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.no-data-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    text-align: center;
+}
+
+.no-data-message p {
+    color: #9ca3af;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Recharts customization */
+.recharts-legend-wrapper {
+    padding-top: 1rem !important;
+}
+
+.recharts-legend-item-text {
+    color: #9ca3af !important;
+}

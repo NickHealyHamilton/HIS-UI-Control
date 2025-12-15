@@ -1,0 +1,198 @@
+.data-viewer {
+    background-color: var(--hamilton-white);
+    border: 2px solid var(--hamilton-trusted-blue-30);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.data-viewer.compact {
+    flex: 1;
+    min-height: 300px;
+}
+
+.data-viewer.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    border-radius: 0;
+    height: 100vh;
+}
+
+.data-viewer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--hamilton-trusted-blue-30);
+    background-color: var(--hamilton-white);
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.data-viewer-header h3 {
+    margin: 0;
+    color: var(--hamilton-deep-blue);
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.timespan-select {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--hamilton-trusted-blue-30);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    background-color: var(--hamilton-white);
+    color: var(--hamilton-deep-blue);
+    cursor: pointer;
+}
+
+.export-btn {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    margin-left: auto;
+}
+
+.shelf-toggles-legend {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.shelf-toggle-legend {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.shelf-toggle-legend input[type="checkbox"] {
+    display: none;
+}
+
+.shelf-indicator-legend {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--hamilton-white);
+    transition: all 0.2s ease;
+    min-width: 32px;
+    text-align: center;
+}
+
+.shelf-toggle-legend input[type="checkbox"]:not(:checked) + .shelf-indicator-legend {
+    opacity: 0.4;
+}
+
+.legend-markers {
+    display: flex;
+    gap: 0.75rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--hamilton-trusted-blue-30);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.line-solid,
+.line-dashed {
+    width: 20px;
+    height: 2px;
+    background-color: #9ca3af;
+}
+
+.line-dashed {
+    background-image: linear-gradient(to right, #9ca3af 50%, transparent 50%);
+    background-size: 6px 2px;
+    background-repeat: repeat-x;
+    background-color: transparent;
+}
+
+.legend-label {
+    font-size: 0.75rem;
+    color: var(--hamilton-deep-blue);
+    font-weight: 500;
+}
+
+.btn-icon {
+    background: none;
+    border: 1px solid var(--hamilton-trusted-blue-30);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--hamilton-deep-blue);
+    transition: all 0.2s ease;
+}
+
+.btn-icon:hover {
+    background-color: var(--hamilton-trusted-blue-30);
+    border-color: var(--hamilton-trusted-blue);
+}
+
+.data-viewer-chart {
+    flex: 1;
+    padding: 0.5rem;
+    background-color: var(--hamilton-white);
+    position: relative;
+    min-height: 250px;
+}
+
+.data-viewer.fullscreen .data-viewer-chart {
+    min-height: 0;
+}
+
+.loading-state,
+.empty-state {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #666;
+    font-style: italic;
+}
+
+.custom-tooltip {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid var(--hamilton-trusted-blue-30);
+    border-radius: 4px;
+    padding: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.tooltip-time {
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+    color: var(--hamilton-deep-blue);
+    font-size: 0.85rem;
+}
+
+.custom-tooltip p {
+    margin: 0.15rem 0;
+    font-size: 0.8rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .data-viewer-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .shelf-toggles {
+        margin-left: 0;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,123 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(28, 45, 87, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    background-color: var(--hamilton-white);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    width: 90%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 2px solid var(--hamilton-trusted-blue);
+    background-color: var(--hamilton-black-8);
+    border-radius: 12px 12px 0 0;
+    flex-shrink: 0;
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: var(--hamilton-deep-blue);
+    font-size: 1.5rem;
+}
+
+.modal-close-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--hamilton-deep-blue);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    line-height: 1;
+    padding: 0;
+}
+
+.modal-close-btn:hover {
+    background-color: var(--hamilton-trusted-blue-30);
+    transform: rotate(90deg);
+}
+
+.modal-body {
+    padding: 2rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+.modal-body .shelf-controls h3 {
+    display: none; /* Hide title since it's in modal header */
+}
+
+.modal-footer {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--hamilton-black-8);
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    background-color: var(--hamilton-black-8);
+    border-radius: 0 0 12px 12px;
+    flex-shrink: 0;
+}
+
+/* Adjust shelf controls for modal display */
+.modal-body .temperature-controls,
+.modal-body .shaking-controls {
+    background-color: var(--hamilton-white);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--hamilton-black-8);
+}
+
+.modal-body .control-inputs {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        max-height: 90vh;
+    }
+    
+    .modal-body {
+        padding: 1rem;
+    }
+}

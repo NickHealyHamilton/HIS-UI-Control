@@ -1,0 +1,158 @@
+:root {
+  /* Primary Brand Colors */
+  --hamilton-deep-blue: #1c2d57;
+  --hamilton-black: #000000;
+  --hamilton-white: #ffffff;
+
+  /* Shading */
+  --hamilton-black-8: #eff0f0;
+
+  /* Supplementary Brand Colors */
+  --hamilton-trusted-blue: #4cc2ee;
+  --hamilton-enabling-green: #00f091;
+
+  /* Supplementary Shading */
+  --hamilton-trusted-blue-30: #c9edfa;
+  --hamilton-trusted-blue-15: #e4f6fc;
+  --hamilton-enabling-green-30: #b2fade;
+  --hamilton-enabling-green-15: #d9fdef;
+
+  /* Secondary Colors */
+  --hamilton-secondary-blue-1: #0069aa;
+  --hamilton-secondary-blue-2: #0092d3;
+  --hamilton-secondary-blue-3: #00858f;
+  --hamilton-secondary-blue-4: #009988;
+
+  /* Typography */
+  --font-family-primary: 'Outfit', sans-serif;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  
+  /* Font Sizes */
+  --font-size-base: 10pt;
+  --font-size-caption: calc(var(--font-size-base) * 0.8);
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.75rem;
+  --font-size-h4: 1.5rem;
+  --font-size-h5: 1.25rem;
+  --font-size-h6: 1.125rem;
+  
+  /* Line Heights */
+  --line-height-heading: 1.1;  /* 110% for headlines */
+  --line-height-content: 1.4;  /* 140% for body text */
+  
+  /* Letter Spacing */
+  --letter-spacing-heading: 0;
+  --letter-spacing-content: 0.025em; /* 25 optical */
+}
+
+/* Base styles */
+body {
+  background-color: var(--hamilton-white);
+  color: var(--hamilton-black);
+  font-family: var(--font-family-primary);
+}
+
+/* Typography styles following Hamilton guidelines */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--hamilton-deep-blue);
+}
+
+/* Button styles */
+.btn {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  filter: grayscale(40%);
+}
+
+.btn-primary {
+  background-color: var(--hamilton-deep-blue);
+  color: var(--hamilton-white);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--hamilton-secondary-blue-1);
+}
+
+.btn-secondary {
+  background-color: var(--hamilton-trusted-blue);
+  color: var(--hamilton-black);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: var(--hamilton-trusted-blue-30);
+}
+
+.btn-success {
+  background-color: var(--hamilton-enabling-green);
+  color: var(--hamilton-black);
+}
+
+.btn-success:hover {
+  background-color: var(--hamilton-enabling-green-30);
+}
+
+.btn-danger {
+  background-color: var(--hamilton-secondary-blue-1);
+  color: var(--hamilton-white);
+}
+
+.btn-danger:hover {
+  opacity: 0.9;
+}
+
+/* Status indicators */
+.status-indicator {
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin: 0 4px;
+}
+
+.connected {
+  background-color: var(--hamilton-enabling-green);
+  color: var(--hamilton-black);
+}
+
+.disconnected {
+  background-color: var(--hamilton-trusted-blue-30);
+  color: var(--hamilton-black);
+}
+
+.initialized {
+  background-color: var(--hamilton-enabling-green);
+  color: var(--hamilton-black);
+}
+
+.not-initialized {
+  background-color: var(--hamilton-trusted-blue-30);
+  color: var(--hamilton-black);
+}
+
+/* Message styles */
+.message {
+  padding: 12px;
+  border-radius: 4px;
+  margin: 8px 0;
+}
+
+.message.success {
+  background-color: var(--hamilton-enabling-green-15);
+  color: var(--hamilton-black);
+}
+
+.message.error {
+  background-color: var(--hamilton-trusted-blue-15);
+  color: var(--hamilton-black);
+}
